@@ -40,10 +40,25 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 2fr;
+  padding-top: 30px;
+  padding-right: 45px;
+  padding-left: 35px;
 }
 
 .search {
-  border: 2px solid green;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.search input {
+  grid-row: span 2;
+  background-color: lightgray;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 550px;
+  align-self: center;
 }
 
 .login-info {
@@ -51,11 +66,33 @@ body {
 }
 
 .user-info {
-  border: 2px solid red;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.user-info .welcome-msg {
+  align-self: end;
 }
 
 .buttons {
-  border: 2px solid orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.head-btn {
+  background-color: #1992d4;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 25px;
 }
 
 .sidebar {
@@ -154,19 +191,37 @@ body {
   background-color: teal;
 }
 
+.trend-user {
+  align-self: center;
+}
+
+.trend-title {
+  align-self: center;
+}
+
 .trend-icon-placeholder {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: red;
   border-radius: 50%;
   grid-row: 1 / 3;
   align-self: center;
 }
 
-.trend-user {
+.user-icon-placeholder {
+  width: 55px;
+  height: 55px;
+  background-color: red;
+  border-radius: 50%;
+  grid-row: 1 / 3;
   align-self: center;
 }
 
-.trend-title {
+.search-icon-placeholder {
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border-radius: 50%;
+  grid-row: 1 / 3;
   align-self: center;
 }
