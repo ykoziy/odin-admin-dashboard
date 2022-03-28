@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -13,6 +17,25 @@ body {
 .header {
   grid-area: 1 / 2 / 1 / span 2;
   background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.search {
+  border: 2px solid green;
+}
+
+.login-info {
+  border: 2px solid blue;
+}
+
+.user-info {
+  border: 2px solid red;
+}
+
+.buttons {
+  border: 2px solid orange;
 }
 
 .sidebar {
