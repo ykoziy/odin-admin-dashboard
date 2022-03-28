@@ -41,6 +41,20 @@ body {
 .sidebar {
   background-color: #1992d4;
   grid-area: 1 / 1 / span 2 / 1;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.logo {
+  background-color: blanchedalmond;
+}
+
+.sidebar-1 {
+  background-color: aqua;
+}
+
+.sidebar-2 {
+  background-color: white;
 }
 
 .main-content {
