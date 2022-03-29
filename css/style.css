@@ -256,12 +256,21 @@ body {
 .annon-box {
   padding: 0 25px;
   justify-content: space-around;
+  padding-top: 20px;
 }
 
 .annon {
   padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+.annon:nth-last-child(n + 2) {
   border-bottom: 1px solid lightgray;
-  background-color: teal;
+}
+
+.annon p {
+  padding-top: 5px;
 }
 
 .trends {
