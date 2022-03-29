@@ -35,6 +35,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* ============================= HEADER STYLE STARTS =============================== */
+
 .header {
   grid-area: 1 / 2 / 1 / span 2;
   background-color: white;
@@ -60,7 +62,10 @@ body {
   border: none;
   border-radius: 15px;
   height: 30px;
-  width: 550px;
+  max-width: 550px;
+  min-width: 100px;
+  line-height: 2rem;
+  padding: 15px;
   align-self: center;
 }
 
@@ -74,9 +79,8 @@ body {
 .login-info {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   gap: 30px;
-  padding-right: 35px;
 }
 
 .login-info .notification-icon {
@@ -98,7 +102,8 @@ body {
 
 .buttons {
   display: flex;
-  justify-content: space-around;
+  gap: 35px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -112,6 +117,10 @@ body {
   height: 30px;
   border-radius: 25px;
 }
+
+/* ============================= HEADER STYLE ENDS =============================== */
+
+/* ============================= SIDEBAR STYLE STARTS ============================= */
 
 .sidebar {
   background-color: #1992d4;
@@ -163,6 +172,10 @@ body {
 .logo h1 {
   font-size: 3rem;
 }
+
+/* ============================= SIDEBAR STYLE ENDS ============================= */
+
+/* ========================= MAIN-CONTENT STYLE STARTS ========================== */
 
 .main-content {
   grid-area: 2 / 2 / 2 / 2;
@@ -277,6 +290,8 @@ body {
 .trend-title {
   align-self: center;
 }
+
+/* ========================= MAIN-CONTENT STYLE ENDS ========================== */
 
 .trend-icon-placeholder {
   width: 40px;
