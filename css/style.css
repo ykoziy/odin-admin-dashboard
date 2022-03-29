@@ -6,21 +6,21 @@
   --common-font: 'Roboto', sans-serif;
   --common-font-size: 1.2rem;
 
-  --sidebar-bg-color: #1992d4;
+  --sidebar-bg-color: #b0413e;
   --sidebar-nav-color: #fff;
   --nav-btn-color: var(--sidebar-bg-color);
 
-  --main-bg-color: #e2e8f0;
-  --main-font-color: #000;
+  --main-bg-color: #fcaa67;
+  --main-font-color: #fff;
 
   --search-bg-color: var(--main-bg-color);
   /* font color for projects, header and trend/annon boxes */
-  --accent-bg-color: #fff;
-  --accent-font-color: #636363;
+  --accent-bg-color: #548687;
+  --accent-font-color: #ffffff;
 
-  --annon-line-color: #d8d7d7;
+  --annon-line-color: #ffffc7;
 
-  --project-border-color: #f0b42a;
+  --project-border-color: #ffffc7;
 }
 
 html {
@@ -104,6 +104,7 @@ body {
   grid-row: 1 / 3;
   align-self: center;
   height: 20px;
+  filter: invert(100%);
 }
 
 .login-info {
@@ -111,6 +112,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+.login-info .ui-icon {
+  filter: invert(100%);
 }
 
 .login-info .user-avatar {
@@ -277,6 +282,7 @@ body {
 
 .project-nav .ui-icon {
   height: 20px;
+  filter: invert(100%);
 }
 
 .side-container {
