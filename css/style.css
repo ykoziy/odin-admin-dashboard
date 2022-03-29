@@ -252,7 +252,7 @@ body {
   background-color: teal;
 }
 
-.trending {
+.trends {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 15px;
@@ -260,14 +260,14 @@ body {
 }
 
 .annon-box,
-.trending-box {
+.trend-container {
   border-radius: 15px;
   background-color: white;
   display: flex;
   flex-direction: column;
 }
 
-.trending-box {
+.trend-container {
   padding: 20px 5px;
   justify-content: space-between;
 }
