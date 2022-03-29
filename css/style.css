@@ -2,6 +2,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  --common-font: 'Roboto', sans-serif;
+  --common-font-size: 1.2rem;
+
+  --sidebar-bg-color: #1992d4;
+  --sidebar-nav-color: #fff;
+  --nav-btn-color: var(--sidebar-bg-color);
+
+  --main-bg-color: #e2e8f0;
+  --main-font-color: #000;
+
+  --search-bg-color: var(--main-bg-color);
+  /* font color for projects, header and trend/annon boxes */
+  --accent-bg-color: #fff;
+  --accent-font-color: #636363;
+
+  --annon-line-color: #d8d7d7;
+
+  --project-border-color: #f0b42a;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -32,7 +53,10 @@ body {
   display: grid;
   grid-template-columns: 0.7fr 4fr;
   grid-template-rows: 1fr 7fr;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--common-font);
+  color: var(--main-font-color);
+  font-size: var(--common-font-size);
+  letter-spacing: 0.1rem;
 }
 
 /* ============================= GLOBAL STYLE STARTS =============================== */
@@ -47,7 +71,7 @@ body {
 
 .header {
   grid-area: 1 / 2 / 1 / span 2;
-  background-color: white;
+  background-color: var(--accent-bg-color);
   display: grid;
   grid-template-columns: minmax(320px, 2fr) auto;
   grid-template-rows: 1fr 2fr;
@@ -65,7 +89,7 @@ body {
 
 .search input {
   grid-row: span 2;
-  background-color: #e2e8f0;
+  background-color: var(--search-bg-color);
   border: none;
   border-radius: 15px;
   height: 30px;
@@ -121,7 +145,7 @@ body {
 }
 
 .head-btn {
-  background-color: #1992d4;
+  background-color: var(--nav-btn-color);
   color: white;
   font-weight: bold;
   outline: none;
@@ -136,7 +160,7 @@ body {
 /* ============================= SIDEBAR STYLE STARTS ============================= */
 
 .sidebar {
-  background-color: #1992d4;
+  background-color: var(--sidebar-bg-color);
   grid-area: 1 / 1 / span 2 / 1;
   display: grid;
   grid-template-rows: auto auto 1fr;
@@ -159,7 +183,7 @@ body {
 }
 
 .sidebar ul li p {
-  color: white;
+  color: var(--sidebar-nav-color);
   font-weight: bold;
   font-size: 2rem;
   cursor: pointer;
@@ -167,11 +191,11 @@ body {
 }
 
 .sidebar ul li p:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--sidebar-nav-color);
 }
 
 .logo {
-  color: white;
+  color: var(--sidebar-nav-color);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -187,7 +211,7 @@ body {
 
 .main-content {
   grid-area: 2 / 2 / 2 / 2;
-  background-color: #e2e8f0;
+  background-color: var(--main-bg-color);
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: auto auto;
@@ -209,11 +233,11 @@ body {
 }
 
 .project-card {
-  background-color: white;
+  background-color: var(--accent-bg-color);
   border-radius: 10px;
   padding: 30px;
   height: 200px;
-  border-left: 11px solid #f0b42a;
+  border-left: 11px solid var(--project-border-color);
   display: grid;
   grid-template-rows: 1fr 1fr;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
@@ -226,8 +250,7 @@ body {
 }
 
 .project-text p {
-  color: #636363;
-  font-size: 1.2rem;
+  color: var(--accent-font-color);
 }
 
 .project-nav {
@@ -262,15 +285,15 @@ body {
 .annon {
   padding-bottom: 20px;
   padding-top: 10px;
-  font-size: 1.2rem;
 }
 
 .annon:nth-last-child(n + 2) {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid var(--annon-line-color);
 }
 
 .annon p {
   padding-top: 5px;
+  color: var(--accent-font-color);
 }
 
 .trends {
@@ -283,7 +306,7 @@ body {
 .annon-box,
 .trend-container {
   border-radius: 15px;
-  background-color: white;
+  background-color: var(--accent-bg-color);
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
@@ -308,18 +331,13 @@ body {
   align-self: center;
 }
 
-.trend-user,
-.trend-title {
-  color: #636363;
-  font-size: 1.2rem;
-}
-
 .trend-user {
   align-self: end;
   font-weight: bold;
 }
 
 .trend-title {
+  color: var(--accent-font-color);
   align-self: start;
 }
 
