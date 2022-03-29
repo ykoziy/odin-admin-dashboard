@@ -323,3 +323,48 @@ body {
 }
 
 /* ========================= MAIN-CONTENT STYLE ENDS ========================== */
+
+@media only screen and (max-width: 940px) {
+  .header {
+    grid-template-columns: minmax(320px, 2fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    padding-bottom: 15px;
+  }
+
+  .buttons {
+    grid-row: 4;
+    justify-content: start;
+  }
+
+  .user-info {
+    grid-row: 2;
+  }
+
+  .login-info {
+    grid-row: 1;
+    justify-content: start;
+  }
+
+  .search {
+    grid-row: 3;
+    padding-right: 30px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .main-content {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    gap: 25px;
+  }
+
+  .side-container {
+    padding-right: 25px;
+  }
+}
