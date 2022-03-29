@@ -41,10 +41,9 @@ body {
   grid-area: 1 / 2 / 1 / span 2;
   background-color: white;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: minmax(320px, 2fr) auto;
   grid-template-rows: 1fr 2fr;
-  padding-top: 30px;
-  padding-right: 45px;
+  padding-top: 15px;
   padding-left: 35px;
   z-index: 1;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -83,7 +82,7 @@ body {
   gap: 30px;
 }
 
-.login-info .notification-icon {
+.login-info img {
   height: 25px;
 }
 
@@ -91,9 +90,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 3px 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  gap: 3px 15px;
 }
 
 .user-info .welcome-msg {
@@ -105,6 +102,7 @@ body {
   gap: 35px;
   justify-content: center;
   align-items: center;
+  padding-right: 35px;
 }
 
 .head-btn {
