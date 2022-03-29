@@ -35,6 +35,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* ============================= GLOBAL STYLE STARTS =============================== */
+.ui-icon {
+  height: 25px;
+  cursor: pointer;
+}
+
+/* ============================= GLOBAL STYLE ENDS =============================== */
+
 /* ============================= HEADER STYLE STARTS =============================== */
 
 .header {
@@ -68,11 +76,10 @@ body {
   align-self: center;
 }
 
-.search img {
+.search .ui-icon {
   grid-row: 1 / 3;
   align-self: center;
   height: 20px;
-  cursor: pointer;
 }
 
 .login-info {
@@ -80,10 +87,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-}
-
-.login-info img {
-  height: 25px;
 }
 
 .login-info .user-avatar {
@@ -153,11 +156,6 @@ body {
   align-items: center;
   gap: 2rem;
   padding-bottom: 20px;
-}
-
-.sidebar ul li img {
-  height: 2.5rem;
-  cursor: pointer;
 }
 
 .sidebar ul li p {
@@ -237,7 +235,7 @@ body {
   align-self: end;
 }
 
-.project-nav img {
+.project-nav .ui-icon {
   height: 20px;
 }
 
