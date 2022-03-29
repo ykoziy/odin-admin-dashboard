@@ -30,7 +30,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 0.7fr 4fr;
   grid-template-rows: 1fr 7fr;
 }
 
@@ -99,19 +99,50 @@ body {
   background-color: #1992d4;
   grid-area: 1 / 1 / span 2 / 1;
   display: grid;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  padding: 25px;
+  padding-top: 15px;
+}
+
+.main-nav,
+.secondary-nav {
+  padding-top: 50px;
+}
+
+.sidebar ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 20px;
+}
+
+.sidebar ul li img {
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.sidebar ul li p {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.sidebar ul li p:hover {
+  border-bottom: 1px solid white;
 }
 
 .logo {
-  background-color: blanchedalmond;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.sidebar-1 {
-  background-color: aqua;
-}
-
-.sidebar-2 {
-  background-color: white;
+.logo h1 {
+  font-size: 3rem;
 }
 
 .main-content {
