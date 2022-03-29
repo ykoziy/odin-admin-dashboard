@@ -403,6 +403,11 @@ body {
     justify-content: start;
   }
 
+  .login-info .user-avatar,
+  .login-info h2 {
+    display: none;
+  }
+
   .search {
     grid-row: 3;
     padding-right: 30px;
