@@ -278,11 +278,23 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: auto 1fr;
   gap: 7px 10px;
-  background-color: teal;
+}
+
+.trend img {
+  height: 40px;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.trend-user,
+.trend-title {
+  color: #636363;
+  font-size: 1.2rem;
 }
 
 .trend-user {
   align-self: end;
+  font-weight: bold;
 }
 
 .trend-title {
@@ -290,15 +302,6 @@ body {
 }
 
 /* ========================= MAIN-CONTENT STYLE ENDS ========================== */
-
-.trend-icon-placeholder {
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  border-radius: 50%;
-  grid-row: 1 / 3;
-  align-self: center;
-}
 
 .user-icon-placeholder {
   width: 55px;
