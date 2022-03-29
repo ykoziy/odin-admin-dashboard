@@ -175,7 +175,7 @@ body {
   background-color: bisque;
   display: grid;
   grid-template-rows: auto 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
   padding: 25px;
 }
@@ -185,8 +185,37 @@ body {
 }
 
 .project {
-  background-color: palegreen;
-  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  height: 200px;
+  border-left: 11px solid #f0b42a;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-text p {
+  color: #636363;
+  font-size: 1.2rem;
+}
+
+.project-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  justify-self: end;
+  align-self: end;
+}
+
+.project-nav img {
+  height: 20px;
 }
 
 .side-container {
