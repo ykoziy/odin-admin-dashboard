@@ -277,16 +277,16 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: auto 1fr;
-  column-gap: 10px;
+  gap: 7px 10px;
   background-color: teal;
 }
 
 .trend-user {
-  align-self: center;
+  align-self: end;
 }
 
 .trend-title {
-  align-self: center;
+  align-self: start;
 }
 
 /* ========================= MAIN-CONTENT STYLE ENDS ========================== */
